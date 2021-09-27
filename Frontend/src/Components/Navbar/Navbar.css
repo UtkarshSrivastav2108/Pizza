@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  color: white !important;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_link {
+  color: white;
+  padding: 0 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: rgb(189, 189, 189);
+}
+
+.nav_link:hover {
+  color: white;
+  transition: 0.45s;
+}
+
+.nav_link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  top: 45px;
+  transition: transform 0.45s ease-out;
+}
+
+.nav_link:hover:after {
+  transform: scaleX(1);
+  top: 45px;
+  border-width: 0 0 1px;
+  transform-origin: bottom left;
+}

@@ -1,0 +1,85 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.page-footer {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  text-align: left;
+}
+
+p > a {
+  color: white;
+  position: relative;
+}
+
+p > a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  top: 25px;
+  transition: transform 0.45s ease-out;
+}
+
+p > a:hover:after {
+  transform: scaleX(1);
+  top: 25px;
+
+  border-width: 0 0 1px;
+  transform-origin: bottom left;
+}
+p > a:hover {
+  color: red;
+}
+
+h6 {
+  color: red;
+}
+/* ==================================== */
+
+.fifi {
+  color: white;
+  position: relative;
+}
+
+.fifi:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.fifi:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 25px;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.45s ease-out;
+}
+
+.fifi:hover:after {
+  transform: scaleX(1);
+  top: 25px;
+  border-width: 0 0 1px;
+  transform-origin: bottom left;
+}
+
+.footer-copyright > a {
+  color: white;
+}
+
+.footer-copyright > a:hover {
+  color: red;
+  cursor: pointer;
+}

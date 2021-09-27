@@ -1,0 +1,5 @@
+.image {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
